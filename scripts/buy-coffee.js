@@ -79,7 +79,7 @@ async function main() {
     const memos = await buyMeACoffee.getMemos()
     printMemos(memos)
 
-    console.log('== ownership ==')
+    console.log('== ownership test ==')
     console.log(await buyMeACoffee.owner())
     await buyMeACoffee.transferOwnership(tipper.address)
     console.log(await buyMeACoffee.owner())
